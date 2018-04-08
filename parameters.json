@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "northeurope"
+        },
+        "virtualMachineName": {
+            "value": "puppetagent-test5"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B1s"
+        },
+        "adminUsername": {
+            "value": "puppetagent"
+        },
+        "virtualNetworkName": {
+            "value": "fca-acn-lab"
+        },
+        "networkInterfaceName": {
+            "value": "puppetagent918"
+        },
+        "networkSecurityGroupName": {
+            "value": "puppetagent-nsg"
+        },
+        "adminPassword": {
+            "value": "Fagianella1!"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "fcaacndevdiag743"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/d8c18df9-eb0d-4513-99e1-30f9edec8a9e/resourceGroups/fca-acn-dev/providers/Microsoft.Storage/storageAccounts/fcaacndevdiag743"
+        },
+        "containerUri": {
+            "value": "https://fcacustomscriptdev.blob.core.windows.net/customscript/"
+        },
+        "scriptToExecute": {
+            "value": "puppetagent_v0.3.sh"
+        },
+        "fqdnPuppetMaster": {
+            "value": "puppet"
+        },
+        "puppetEnvironment": {
+            "value": "gitlabreposample_master"
+        },
+		"puppetRunInterval": {
+		    "value": "30m"
+		},
+		"vmRegion": {
+            "value": "emea"
+        },
+		"vmEnvironment": {
+            "value": "dev"
+        },
+		"vmRole": {
+            "value": "database"
+        },
+        "customScriptStorageAccountName": {
+            "value": "fcacustomscriptdev"
+        },
+        "extensionName": {
+            "value": "customScript"
+        },
+        "subnetName": {
+            "value": "default"
+        }
+    }
+}
